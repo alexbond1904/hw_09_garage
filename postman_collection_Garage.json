@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "dce26f93-8256-4501-b14c-845173ae8e63",
+		"name": "Garage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40115088"
+	},
+	"item": [
+		{
+			"name": "Add car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"regNumber\": \"126\",\r\n    \"model\": \"S5\",\r\n    \"company\": \"Audi\",\r\n    \"engine\": 3.0,\r\n    \"color\": \"silver\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/garage/addCar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"garage",
+						"addCar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove car",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/garage/removeCar?regNumber=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"garage",
+						"removeCar"
+					],
+					"query": [
+						{
+							"key": "regNumber",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/garage/allCars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"garage",
+						"allCars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find car by reg number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/garage/findCarByRegNumber?regNumber=124",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"garage",
+						"findCarByRegNumber"
+					],
+					"query": [
+						{
+							"key": "regNumber",
+							"value": "124"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find cars by color",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/garage/findCarsByColor?color=white",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"garage",
+						"findCarsByColor"
+					],
+					"query": [
+						{
+							"key": "color",
+							"value": "white"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find cars by engine",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/garage/findCarsByEngine?min=2&max=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"garage",
+						"findCarsByEngine"
+					],
+					"query": [
+						{
+							"key": "min",
+							"value": "2"
+						},
+						{
+							"key": "max",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find cars by company",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/garage/findCarsByCompany?company=Tesla",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"garage",
+						"findCarsByCompany"
+					],
+					"query": [
+						{
+							"key": "company",
+							"value": "Tesla"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find cars by model",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/garage/findCarsByModel?model=Y",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"garage",
+						"findCarsByModel"
+					],
+					"query": [
+						{
+							"key": "model",
+							"value": "Y"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

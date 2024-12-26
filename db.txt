@@ -1,0 +1,23 @@
+[
+  {
+    "regNumber": "123",
+    "model": "6",
+    "company": "Mazda",
+    "engine": 2.5,
+    "color": "white"
+  },
+  {
+    "regNumber": "124",
+    "model": "Y",
+    "company": "Tesla",
+    "engine": 0,
+    "color": "white"
+  },
+  {
+    "regNumber": "125",
+    "model": "M5",
+    "company": "BMW",
+    "engine": 4.4,
+    "color": "black"
+  }
+]
